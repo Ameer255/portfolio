@@ -1,119 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Website</title>
-    <link rel="stylesheet" href="style.css"> </link>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </link>
+    <link rel="stylesheet" href="Portfolio.css">
+    <script type="text/javascript" src="portfolio.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bellota&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <div id="container">
-        <header>
-            <nav>
-                   <div>
-                       <ul>
-                           <li><a href="#">Blog</a></li>
-                           <li><a href="#">Projects</a></li>
-                           <li><a href="#">Contact</a></li>
-                           <li><a href="#">About</a></li>
-                       </ul>
-                   </div>
+    <header>
 
-                   <div>
-                     <a href="#"> <i class="fab fa-youtube"></i></a> 
-                       <a href="#"><i class="fab fa-facebook"></i></a> 
-                      <a href="#"><i class="fab fa-twitter"></i></a> 
+        <div id="nav-sm" class="container-fluid text-center">
+
+
+            <ul>
+                <li> <a href="#">Home </a></li>
+                <li> <a href="#">Projects </a></li>
+                <li> <a href="#">About </a></li>
+                <li> <a href="#">Contact </a></li>
+            </ul>
+        </div>
+
+
+
+
+        <div class="container-fluid py-2">
+            <div class="row ">
+                <div class="col-sm-3 col-md-3  col-lg-3 d-flex align-items-center justify-content-between">
+
+                    <strong>Ameer Hyder</strong>
+                    <div id="hamberger" onclick="navcolapse()">
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
-            </nav>
-        </header>
 
-        <div id="top">
-        
-            <div id="language-container">
+                    <div id="close" class="cursor-pointer" onclick="clos()">
+                        <i class="fa fa-times"></i>
+                    </div>
 
-            <div class="languages"><figure ><img src="html.jpg"/></figure><figcaption>HTML (Intermediate)</figcaption></div>
-            <div class="languages"><figure ><img src="css.jpg"/></figure><figcaption>CSS (Intermediate)</figcaption></div>
-            <div class="languages"><figure ><img src="js.jpg"/></figure><figcaption>JS (Average)</figcaption></div>
-            <div class="languages"><figure ><img src="cpp.jpg"/></figure><figcaption>C++ (Intermediate)</figcaption></div>
+                </div>
+
+                <div id="nav" class="col-6">
+
+                    <nav>
+                        <ul class="mt-2">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <div id="c-icons" class="col-3 align-items-center justify-content-around">
+                    <a href="#"> <i class="fa fa-facebook"></i> </a>
+                    <a href="#"> <i class="fa fa-twitter"></i></a>
+                    <a href="#"> <i class="fa fa-instagram"></i></a>
+                    <a href="#"> <i class="fa fa-linkedin"></i></a>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="row text-center my-2" id="profile">
+            <div class="col-12 ">
+                <img class="card-img-top  rounded-circle " src="ameer.jpg" style="width: 200px; height: 200px;" />
+
+            </div>
         </div>
 
-        <div id="inside-top">
-
-            <div id="my-img">
-                <img src="ameer.jpg"/>
+        <div class="row text-center px-3">
+            <div class="col-3"></div>
+            <div class="col-6 text-center">
+                <p>Hi, I'm Ameer Hyder, A Front-End Web Developer. Also Willing And
+                    Striving To Become A Full Stack Web Developer In Future. </p>
             </div>
-
-            <div id="about"><h3>Web Developer</br>Student (BS-IT)</h3></div>
-            <div id="langIKnow"><h2>Languages That I Work On</h2></div>
-
+            <div class="col-3"></div>
         </div>
 
+        <div class="row text-center my-5">
+            <div class="col-12"><strong>
+                    <h3>S K I L L S</h3>
+                </strong></div>
         </div>
-        <div id="projects-header">
-            <h1>PROJECTS</h1>
+
+        <div class="row skills">
+            <div class="col-sm-3 col-md-6 col-lg-3 text-center my-4">
+                <h1>HTML</h1>
+            </div>
+            <div class="col-sm-3 col-md-6 col-lg-3 text-center my-4">
+                <h1>CSS</h1>
+            </div>
+            <div class="col-sm-3 col-md-6 col-lg-3 text-center my-4">
+                <h1>JAVASCRIPT</h1>
+            </div>
+            <div class="col-sm-3 col-md-6 col-lg-3 text-center my-4">
+                <h1>C++</h1>
+            </div>
         </div>
 
-        <main>
-            <div class="projects"><img src="loaders.jpg"/></div>
+        <div class="row text-center my-5">
+            <div class="col-12">
+                <strong>
+                    <h3>P R O J E C T S</h3>
+                </strong>
+            </div>
+        </div>
 
-            <div class="projects description">
-                <h2><a href="https://ameer255.github.io/Loaders/" target="blank">Website Pre-Loaders</a></h2>
-                <p>
-                    This project contains 12 beautiful pre-loaders created with 
-                    CSS Animations. The container uses Grid technique, whereas each
-                    child element uses Flex to keep the Loader at its center. Another 
-                    good thing about this project is that loaders are constructed using HTML elements
-                    and no SVG images have been used.
-                </p>
+        <div class="row projects px-2">
+            <div class="col-sm-6 col-md-6 col-lg-6 text-center mt-5">
+                <img class="card-img-top" src="loaders.jpg" />
+                <h4 class="card-title mt-2 text-uppercase"><a target="_blank" href="https://ameer255.github.io/Loaders/">Website Loaders</a></h4>
+
+
+
+
             </div>
 
-            <div class="projects"><img src="simmons.jpg"/></div>
-
-            <div class="projects description">
-                <h2><a href="https://ameer255.github.io/class2-task/" target="blank">Simmons University Website</a></h2>
-                <p>I tried to simulate a page of Simmons University's Website.
-                    The layout of this project is made adjustable using percentages
-                    so it adjusts very well to the small screen sizes. Mainly, Flex-box is used
-                    for layout purpose.
-                </p>
+            <div class="col-sm-6 col-md-6 col-lg-6 text-center mt-5">
+                <img class="card-img-top" src="simmons.jpg" />
+                <h4 class="card-title mt-2 text-uppercase"><a target="_blank" href="https://ameer255.github.io/class2-task/">Simmons website</a></h4>
             </div>
 
-            <div class="projects"><img src="documentation.jpg"/></div>
-
-            <div class="projects description">
-                <h2><a href="https://ameer255.github.io/TK-weekly-project/" target="blank">JavaScript documentation Page</a></h2>
-                <p> The JavaScrit documention page highlights the major concepts
-                    of well kn own and very commonly used programming language, "JavaScript".
-                  The right side of the page is covered by the actual content whereas
-                    The left side contains a fixed Naigation Bar which navigates to the
-                    different sections of main content.
-                </p>
+            <div class="col-sm-6 col-md-6 col-lg-6 text-center mt-5">
+                <img class="card-img-top" src="kitchen.jpg" />
+                <h4 class="card-title mt-2 text-uppercase"><a target="_blank" href="https://ameer255.github.io/kitchen-banquet/">Kitchen banquet</a></h4>
             </div>
 
-            <div class="projects"><img src="google.jpg"/></div>
-
-            <div class="projects description">
-                <h2><a href="https://ameer255.github.io/weekly-task2/" target="blank">Google Sign-Up Form</a></h2>
-                <p>Forms are obviously an important part of a webpage. And Google has
-                     quite interesting, interactive, and user friendly forms. I created
-                     one for "Create google account" and here's the result. Well, my form 
-                     isn't that perfect, but i've used some JavaScript to validate all the
-                     inputs and make sure that all the information recieved is correct.
-                </p>
+            <div class="col-sm-6 col-md-6 col-lg-6 text-center mt-5">
+                <img class="card-img-top" src="form.jpg" />
+                <h4 class="card-title mt-2 text-uppercase"><a target="_blank" href="https://ameer255.github.io/weekly-task2/">Google Form</a></h4>
             </div>
 
-            <div class="projects"></div>
-            <div class="projects"></div>
+        </div>
+        <div class="row text-center mt-5">
+            <div class="col-12 mt-5">
+                <strong>
+                    <h3>A B O U T M E</h3>
+                </strong>
+            </div>
+        </div>
 
-            
-        </main>
-        
-        <footer>
-            <p>Portfolio Website By Ameer hyder</p>
+        <footer class="row my-2 text-center">
+
+            <div class="col-sm-4 col-md-4 col-lg-4 text-left mt-5 px-3">
+                <h4 class="mb-4 text-uppercase ml-4">Studies</h4>
+
+                <ul>
+
+                    <li><strong>2019-Present</strong></li>
+                    
+                        <li>Bachelor's Of Information Technology</li>
+                    
+
+                    <li><strong>2016-2018</strong></li>
+                    
+                        <li>Intermediate In Computer Science</li>
+                    
+
+                    <li><strong>2010-2015</strong></li>
+                    
+                        <li>Matriculation From TCF School</li>
+                    
+                </ul>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-4 text-left mt-5 px-2">
+                <h4 class="mb-4 text-uppercase ml-4">Interests</h4>
+
+                <ul>
+
+                    <li><strong>Web Developement</strong></li>
+                    
+                        
+                    
+
+                    <li><strong>Android Apps Developement</strong></li>
+                    
+                        
+                    
+
+                    <li><strong>Reading Technology Books</strong></li>
+                    
+                        
+                    
+                </ul>
+            </div>
+
+
+            <div class="col-sm-4 col-md-4 col-lg-4 text-left mt-5 px-2">
+                <h4 class="mb-4 text-uppercase ml-4">contact</h4>
+
+                <ul>
+
+                    <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                    <li><a target="_blank" href="https://twitter.com/AmeerHy79133246"><i class="fa fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fa fa-google"></i> Google+</a></li>
+                    
+                    
+                    
+                </ul>
+            </div>
+
+
+
+
+          
+
+
+
+
         </footer>
-       
-    </div>
+
+    </main>
+
+
 </body>
+
 </html>
