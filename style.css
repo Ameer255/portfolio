@@ -40,13 +40,13 @@ nav a, nav a:hover, #c-icons a, #c-icons a:hover, #nav-sm a, #nav-sm a:hover{
     color: white;
 }
 #nav-sm{
-    position: absolute;
-    top: 1%;
+    position: fixed;
+    top: 8%;
     display: none;
     transition: all ease-in;
     z-index: 1;
     background-image: linear-gradient(to right,  rgb(2, 59, 77), rgb(12, 90, 130), rgb(7, 90, 134), rgb(5, 82, 105));
-    height:100%;
+    height:50%;
     opacity: 0.9;
     
 }
