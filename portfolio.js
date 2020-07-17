@@ -1,25 +1,41 @@
 
 
-function navcolapse()
-{
-    var a=document.getElementById("nav-sm");
-    a.style.display="block";
-    
-    var b=document.getElementById("hamberger");
-    b.style.display="none";
-    
-     var c=document.getElementById("close");
-    c.style.display="block";
-}
 
-function clos()
-{
-      var a=document.getElementById("nav-sm");
-    a.style.display="none";
+
+   let navOpen=false;
+
+     function navOpenClose(){
+
+        
+        let nav=document.getElementById("nav-sm");
     
-     var c=document.getElementById("close");
-    c.style.display="none";
+        let navLinks=document.querySelector('#nav-sm a');
     
-     var b=document.getElementById("hamberger");
-    b.style.display="block";
-}
+        let hamberger=document.querySelector('#hamberger');
+
+
+        
+
+        if (navOpen === false){
+            nav.style.width = "100%";
+            nav.style.left = "0";
+
+            
+
+            hamberger.classList.add('toggle');
+            navOpen=true;
+
+        }
+
+        else if(navOpen===true){
+            nav.style.width = "0%";
+            nav.style.left = "-400px";
+            
+            
+
+            hamberger.classList.remove('toggle');
+            navOpen=false;
+
+        }
+    }
+   
